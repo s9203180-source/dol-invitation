@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>은빈이의 첫 번째 생일잔치에 초대합니다</title>
+    <title>은빈이의 첫 번째 생일잔치에 초대합니다!</title>
     
-    <!-- 카카오톡 공유 썸네일 (Vercel 배포 후 실제 도메인 URL로 수정 필요) -->
-    <meta property="og:title" content="은빈이의 첫 번째 생일 잔치에 초대합니다!">
+    <!-- 카카오톡 공유 썸네일 -->
+    <meta property="og:title" content="은빈이의 첫 번째 생일잔치에 초대합니다!">
     <meta property="og:description" content="2026년 12월 12일 (토) 오후 5시 | 대전 서구 대덕대로 366 2층">
     <meta property="og:image" content="https://dol-invitation-theta.vercel.app/images/main.jpg">
 
@@ -22,13 +22,12 @@
         <!-- 1. 메인 커버 영역 -->
         <header class="hero-section">
             <p class="sub-title">FIRST BIRTHDAY INVITATION</p>
-            <h1 class="main-title"> 은빈이의<br>첫 번째 생일에 초대합니다</h1>
+            <h1 class="main-title">은빈이의<br>첫 번째 생일에 초대합니다</h1>
             <div class="main-photo-wrap">
-                <!-- 메인 대표 사진 경로 -->
                 <img src="./images/main.jpg" alt="아기 메인 사진" onerror="this.src='https://placehold.co/600x800/F5F2EB/8C8275?text=Main+Photo'">
             </div>
             <div class="hero-info">
-                <p class="baby-name"> <strong>성은빈 공주님</strong></p>
+                <p class="baby-name">아기 <strong>성은빈</strong></p>
                 <p class="parents-name">아빠 <strong>성선모</strong> · 엄마 <strong>정한나</strong></p>
                 <p class="event-date">2026. 12. 12 SAT PM 5:00</p>
             </div>
@@ -43,55 +42,64 @@
                 어느덧 첫 번째 생일을 맞이했습니다.<br><br>
                 사랑과 관심으로 지켜봐 주신 덕분에<br>
                 건강하고 밝게 자랄 수 있었습니다.<br><br>
-                귀한 걸음 하시어 우리 아이의 앞날을<br>
+                귀한 걸음 하시어 우리 은빈이의 앞날을<br>
                 함께 축복해 주시면 감사하겠습니다.
             </p>
             <div class="contact-box">
                 <div class="contact-item">
                     <span>아빠 성선모</span>
                     <div class="contact-btns">
-                        <a href="tel:010-4104-6735" class="btn-icon" aria-label="전화걸기">📞</a>
-                        <a href="sms:010-4104-6735" class="btn-icon" aria-label="문자보내기">✉️</a>
+                        <a href="tel:010-0000-0000" class="btn-icon" aria-label="전화걸기">📞</a>
+                        <a href="sms:010-0000-0000" class="btn-icon" aria-label="문자보내기">✉️</a>
                     </div>
                 </div>
                 <div class="contact-item">
                     <span>엄마 정한나</span>
                     <div class="contact-btns">
-                        <a href="tel:010-2218-9162" class="btn-icon" aria-label="전화걸기">📞</a>
-                        <a href="sms:010-2218-9162" class="btn-icon" aria-label="문자보내기">✉️</a>
+                        <a href="tel:010-0000-0000" class="btn-icon" aria-label="전화걸기">📞</a>
+                        <a href="sms:010-0000-0000" class="btn-icon" aria-label="문자보내기">✉️</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 3. 갤러리 (클릭 시 확대 팝업) -->
+        <!-- 3. 갤러리 (슬라이드 + 하단 썸네일 + 클릭 시 확대) -->
         <section class="section gallery-section">
             <h2 class="section-title">GALLERY</h2>
-            <p class="section-desc">사진을 누르시면 크게 보실 수 있습니다</p>
-            <div class="gallery-grid" id="galleryGrid">
-                <!-- 사진 개수에 맞춰 추가/삭제 가능 -->
-                <img src="./images/gallery-01.jpg" alt="갤러리 1" style="object-position: center 15%;" onclick="openLightbox(0)" onerror="this.src='https://placehold.co/400x400/EAE5DC/8C8275?text=Photo+1'">
-                <img src="./images/gallery-02.jpg" alt="갤러리 2" onclick="openLightbox(1)" onerror="this.src='https://placehold.co/400x400/EAE5DC/8C8275?text=Photo+2'">
-                <img src="./images/gallery-03.jpg" alt="갤러리 3" onclick="openLightbox(2)" onerror="this.src='https://placehold.co/400x400/EAE5DC/8C8275?text=Photo+3'">
-                <img src="./images/gallery-04.jpg" alt="갤러리 4" onclick="openLightbox(3)" onerror="this.src='https://placehold.co/400x400/EAE5DC/8C8275?text=Photo+4'">
-                <img src="./images/gallery-05.jpg" alt="갤러리 5" onclick="openLightbox(4)" onerror="this.src='https://placehold.co/400x400/EAE5DC/8C8275?text=Photo+5'">
-                <img src="./images/gallery-06.jpg" alt="갤러리 6" onclick="openLightbox(5)" onerror="this.src='https://placehold.co/400x400/EAE5DC/8C8275?text=Photo+6'">
-                <img src="./images/gallery-07.jpg" alt="갤러리 7" onclick="openLightbox(6)" onerror="this.src='https://placehold.co/400x400/EAE5DC/8C8275?text=Photo+7'">
-                <img src="./images/gallery-08.jpg" alt="갤러리 8" onclick="openLightbox(7)" onerror="this.src='https://placehold.co/400x400/EAE5DC/8C8275?text=Photo+8'">
-                <img src="./images/gallery-09.jpg" alt="갤러리 9" onclick="openLightbox(8)" onerror="this.src='https://placehold.co/400x400/EAE5DC/8C8275?text=Photo+9'">
-                <img src="./images/gallery-10.jpg" alt="갤러리 10" onclick="openLightbox(9)" onerror="this.src='https://placehold.co/400x400/EAE5DC/8C8275?text=Photo+10'">
-                <img src="./images/gallery-11.jpg" alt="갤러리 11" onclick="openLightbox(10)" onerror="this.src='https://placehold.co/400x400/EAE5DC/8C8275?text=Photo+11'">
-                <img src="./images/gallery-12.jpg" alt="갤러리 12" onclick="openLightbox(11)" onerror="this.src='https://placehold.co/400x400/EAE5DC/8C8275?text=Photo+12'">
-                <img src="./images/gallery-13.jpg" alt="갤러리 13" onclick="openLightbox(12)" onerror="this.src='https://placehold.co/400x400/EAE5DC/8C8275?text=Photo+13'">
-                <img src="./images/gallery-14.jpg" alt="갤러리 14" onclick="openLightbox(13)" onerror="this.src='https://placehold.co/400x400/EAE5DC/8C8275?text=Photo+14'">
-                <img src="./images/gallery-15.jpg" alt="갤러리 15" onclick="openLightbox(14)" onerror="this.src='https://placehold.co/400x400/EAE5DC/8C8275?text=Photo+15'">
-                <img src="./images/gallery-16.jpg" alt="갤러리 16" onclick="openLightbox(15)" onerror="this.src='https://placehold.co/400x400/EAE5DC/8C8275?text=Photo+16'">
-                <img src="./images/gallery-17.jpg" alt="갤러리 17" onclick="openLightbox(16)" onerror="this.src='https://placehold.co/400x400/EAE5DC/8C8275?text=Photo+17'">
-                <img src="./images/gallery-18.jpg" alt="갤러리 18" onclick="openLightbox(17)" onerror="this.src='https://placehold.co/400x400/EAE5DC/8C8275?text=Photo+18'">
-                <img src="./images/gallery-19.jpg" alt="갤러리 19" onclick="openLightbox(18)" onerror="this.src='https://placehold.co/400x400/EAE5DC/8C8275?text=Photo+19'">
-                <img src="./images/gallery-20.jpg" alt="갤러리 20" onclick="openLightbox(19)" onerror="this.src='https://placehold.co/400x400/EAE5DC/8C8275?text=Photo+20'">
-                <img src="./images/gallery-21.jpg" alt="갤러리 21" onclick="openLightbox(20)" onerror="this.src='https://placehold.co/400x400/EAE5DC/8C8275?text=Photo+20'">
+            <p class="section-desc">좌우로 넘기거나 사진을 누르시면 크게 보실 수 있습니다</p>
+            
+            <!-- 메인 슬라이드 영역 -->
+            <div class="slider-wrapper">
+                <div class="slider-track" id="sliderTrack">
+                    <div class="slide"><img src="./images/gallery-01.jpg" alt="갤러리 1" style="object-position: center 15%;" onclick="openLightbox(0)"></div>
+                    <div class="slide"><img src="./images/gallery-02.jpg" alt="갤러리 2" onclick="openLightbox(1)"></div>
+                    <div class="slide"><img src="./images/gallery-03.jpg" alt="갤러리 3" onclick="openLightbox(2)"></div>
+                    <div class="slide"><img src="./images/gallery-04.jpg" alt="갤러리 4" onclick="openLightbox(3)"></div>
+                    <div class="slide"><img src="./images/gallery-05.jpg" alt="갤러리 5" onclick="openLightbox(4)"></div>
+                    <div class="slide"><img src="./images/gallery-06.jpg" alt="갤러리 6" onclick="openLightbox(5)"></div>
+                    <div class="slide"><img src="./images/gallery-07.jpg" alt="갤러리 7" onclick="openLightbox(6)"></div>
+                    <div class="slide"><img src="./images/gallery-08.jpg" alt="갤러리 8" onclick="openLightbox(7)"></div>
+                    <div class="slide"><img src="./images/gallery-09.jpg" alt="갤러리 9" onclick="openLightbox(8)"></div>
+                    <div class="slide"><img src="./images/gallery-10.jpg" alt="갤러리 10" onclick="openLightbox(9)"></div>
+                    <div class="slide"><img src="./images/gallery-11.jpg" alt="갤러리 11" onclick="openLightbox(10)"></div>
+                    <div class="slide"><img src="./images/gallery-12.jpg" alt="갤러리 12" onclick="openLightbox(11)"></div>
+                    <div class="slide"><img src="./images/gallery-13.jpg" alt="갤러리 13" onclick="openLightbox(12)"></div>
+                    <div class="slide"><img src="./images/gallery-14.jpg" alt="갤러리 14" style="object-position: center 15%;" onclick="openLightbox(13)"></div>
+                    <div class="slide"><img src="./images/gallery-15.jpg" alt="갤러리 15" onclick="openLightbox(14)"></div>
+                    <div class="slide"><img src="./images/gallery-16.jpg" alt="갤러리 16" style="object-position: center 15%;" onclick="openLightbox(15)"></div>
+                    <div class="slide"><img src="./images/gallery-17.jpg" alt="갤러리 17" style="object-position: center 15%;" onclick="openLightbox(16)"></div>
+                    <div class="slide"><img src="./images/gallery-18.jpg" alt="갤러리 18" onclick="openLightbox(17)"></div>
+                    <div class="slide"><img src="./images/gallery-19.jpg" alt="갤러리 19" onclick="openLightbox(18)"></div>
+                    <div class="slide"><img src="./images/gallery-20.jpg" alt="갤러리 20" onclick="openLightbox(19)"></div>
+                    <div class="slide"><img src="./images/gallery-21.jpg" alt="갤러리 21" onclick="openLightbox(20)"></div>
+                </div>
+                <button type="button" class="slider-btn prev" onclick="moveSlide(-1)">‹</button>
+                <button type="button" class="slider-btn next" onclick="moveSlide(1)">›</button>
+                <div class="slider-counter" id="sliderCounter">1 / 21</div>
             </div>
+
+            <!-- 하단 가로 스크롤 썸네일 -->
+            <div class="thumb-strip" id="thumbStrip"></div>
         </section>
 
         <!-- 4. 일시 및 오시는 길 -->
@@ -103,15 +111,13 @@
             </div>
 
             <div class="address-box">
-                <p class="venue-name">만년동 경복궁</p>
+                <p class="venue-name">행사 장소명 (홀 이름 입력)</p>
                 <p class="address-road">대전 서구 대덕대로 366, 2층</p>
                 <p class="address-jibun">(지번) 대전 서구 만년동 282, 2층</p>
                 <button type="button" class="btn-copy-addr" onclick="copyText('대전 서구 대덕대로 366')">주소 복사하기</button>
             </div>
 
-            <!-- 약도 이미지 또는 카카오맵 영역 -->
             <div class="map-placeholder">
-                <!-- 실제 약도 이미지가 있다면 아래 img 태그 사용 -->
                 <img src="./images/map.jpg" alt="오시는 길 약도" onerror="this.style.display='none'; document.getElementById('mapFallback').style.display='flex';">
                 <div id="mapFallback" class="map-fallback">
                     <p>대전 서구 대덕대로 366 (만년동 282) 2층</p>
@@ -119,7 +125,6 @@
                 </div>
             </div>
 
-            <!-- 내비게이션 바로가기 버튼 -->
             <div class="navi-buttons">
                 <a href="https://map.naver.com/v5/search/대전%20서구%20대덕대로%20366" target="_blank" class="btn-navi naver">네이버 지도</a>
                 <a href="https://map.kakao.com/link/search/대전 서구 대덕대로 366" target="_blank" class="btn-navi kakao">카카오맵</a>
@@ -131,45 +136,7 @@
             </div>
         </section>
 
-        <!-- 5. 마음 전하실 곳 (아코디언 계좌번호) -->
-        <section class="section account-section">
-            <h2 class="section-title">마음 전하실 곳</h2>
-            <p class="section-desc">참석이 어려우신 분들을 위해 기재하였습니다.<br>너그러운 마음으로 양해 부탁드립니다.</p>
-            
-            <div class="accordion">
-                <button type="button" class="accordion-header" onclick="toggleAccordion('fatherAccount')">
-                    <span>아빠 측 계좌번호 보기</span>
-                    <span class="arrow">▼</span>
-                </button>
-                <div id="fatherAccount" class="accordion-body">
-                    <div class="account-row">
-                        <div>
-                            <p class="bank-name">OO은행 (예금주: 성선모)</p>
-                            <p class="account-num">000-0000-0000-00</p>
-                        </div>
-                        <button type="button" class="btn-copy" onclick="copyText('000-0000-0000-00')">복사</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="accordion">
-                <button type="button" class="accordion-header" onclick="toggleAccordion('motherAccount')">
-                    <span>엄마 측 계좌번호 보기</span>
-                    <span class="arrow">▼</span>
-                </button>
-                <div id="motherAccount" class="accordion-body">
-                    <div class="account-row">
-                        <div>
-                            <p class="bank-name">OO은행 (예금주: 정한나)</p>
-                            <p class="account-num">000-0000-0000-00</p>
-                        </div>
-                        <button type="button" class="btn-copy" onclick="copyText('000-0000-0000-00')">복사</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 6. 푸터 & 링크 복사 -->
+        <!-- 5. 푸터 & 링크 복사 -->
         <footer class="footer">
             <button type="button" class="btn-share" onclick="copyPageUrl()">초대장 링크 복사하기</button>
             <p class="copyright">THANK YOU FOR CELEBRATING WITH US</p>
@@ -182,7 +149,7 @@
         <button type="button" class="lightbox-prev" onclick="changePhoto(-1, event)">‹</button>
         <img id="lightboxImg" src="" alt="확대 사진">
         <button type="button" class="lightbox-next" onclick="changePhoto(1, event)">›</button>
-        <div id="lightboxCounter" class="lightbox-counter">1 / 6</div>
+        <div id="lightboxCounter" class="lightbox-counter">1 / 21</div>
     </div>
 
     <!-- 토스트 알림창 -->
