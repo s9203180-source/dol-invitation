@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>우리 아기의 첫 번째 생일에 초대합니다</title>
+    
+    <!-- 카카오톡 공유 썸네일 (Vercel 배포 후 실제 도메인 URL로 수정 필요) -->
+    <meta property="og:title" content="우리 아기의 첫 번째 생일에 초대합니다">
+    <meta property="og:description" content="2026년 12월 12일 (토) 오후 5시 | 대전 서구 대덕대로 366 2층">
+    <meta property="og:image" content="https://your-domain.vercel.app/images/og-thumb.jpg">
+
+    <!-- 구글 웹폰트 (명조체 & 깔끔한 산세리프) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Pretendard:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 1. 메인 커버 영역 -->
+        <header class="hero-section">
+            <p class="sub-title">FIRST BIRTHDAY INVITATION</p>
+            <h1 class="main-title">우리 아기의<br>첫 번째 생일에 초대합니다</h1>
+            <div class="main-photo-wrap">
+                <!-- 메인 대표 사진 경로 -->
+                <img src="./images/main.jpg" alt="아기 메인 사진" onerror="this.src='https://placehold.co/600x800/F5F2EB/8C8275?text=Main+Photo'">
+            </div>
+            <div class="hero-info">
+                <p class="baby-name"> <strong>성은빈 공주님</strong></p>
+                <p class="parents-name">아빠 <strong>성선모</strong> · 엄마 <strong>정한나</strong></p>
+                <p class="event-date">2026. 12. 12 SAT PM 5:00</p>
+            </div>
+        </header>
+
+        <!-- 2. 초대 인사말 -->
+        <section class="section greeting-section">
+            <div class="divider"></div>
+            <h2 class="section-title">소중한 분들을 초대합니다</h2>
+            <p class="greeting-text">
+                열 달의 설렘으로 만난 작은 생명이<br>
+                어느덧 첫 번째 생일을 맞이했습니다.<br><br>
+                사랑과 관심으로 지켜봐 주신 덕분에<br>
+                건강하고 밝게 자랄 수 있었습니다.<br><br>
+                귀한 걸음 하시어 우리 아이의 앞날을<br>
+                함께 축복해 주시면 감사하겠습니다.
+            </p>
+            <div class="contact-box">
+                <div class="contact-item">
+                    <span>아빠 성선모</span>
+                    <div class="contact-btns">
+                        <a href="tel:010-0000-0000" class="btn-icon" aria-label="전화걸기">📞</a>
+                        <a href="sms:010-0000-0000" class="btn-icon" aria-label="문자보내기">✉️</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span>엄마 정한나</span>
+                    <div class="contact-btns">
+                        <a href="tel:010-0000-0000" class="btn-icon" aria-label="전화걸기">📞</a>
+                        <a href="sms:010-0000-0000" class="btn-icon" aria-label="문자보내기">✉️</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. 갤러리 (클릭 시 확대 팝업) -->
+        <section class="section gallery-section">
+            <h2 class="section-title">GALLERY</h2>
+            <p class="section-desc">사진을 누르시면 크게 보실 수 있습니다</p>
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- 사진 개수에 맞춰 추가/삭제 가능 -->
+                <img src="./images/gallery-01.jpg" alt="갤러리 1" onclick="openLightbox(0)" onerror="this.src='https://placehold.co/400x400/EAE5DC/8C8275?text=Photo+1'">
+                <img src="./images/gallery-02.jpg" alt="갤러리 2" onclick="openLightbox(1)" onerror="this.src='https://placehold.co/400x400/EAE5DC/8C8275?text=Photo+2'">
+                <img src="./images/gallery-03.jpg" alt="갤러리 3" onclick="openLightbox(2)" onerror="this.src='https://placehold.co/400x400/EAE5DC/8C8275?text=Photo+3'">
+                <img src="./images/gallery-04.jpg" alt="갤러리 4" onclick="openLightbox(3)" onerror="this.src='https://placehold.co/400x400/EAE5DC/8C8275?text=Photo+4'">
+                <img src="./images/gallery-05.jpg" alt="갤러리 5" onclick="openLightbox(4)" onerror="this.src='https://placehold.co/400x400/EAE5DC/8C8275?text=Photo+5'">
+                <img src="./images/gallery-06.jpg" alt="갤러리 6" onclick="openLightbox(5)" onerror="this.src='https://placehold.co/400x400/EAE5DC/8C8275?text=Photo+6'">
+            </div>
+        </section>
+
+        <!-- 4. 일시 및 오시는 길 -->
+        <section class="section location-section">
+            <h2 class="section-title">LOCATION</h2>
+            <div class="date-card">
+                <p class="date-highlight">2026년 12월 12일 토요일 오후 5시</p>
+                <button type="button" class="btn-outline" onclick="downloadICS()">📅 내 캘린더에 일정 저장</button>
+            </div>
+
+            <div class="address-box">
+                <p class="venue-name">행사 장소명 (홀 이름 입력)</p>
+                <p class="address-road">대전 서구 대덕대로 366, 2층</p>
+                <p class="address-jibun">(지번) 대전 서구 만년동 282, 2층</p>
+                <button type="button" class="btn-copy-addr" onclick="copyText('대전 서구 대덕대로 366')">주소 복사하기</button>
+            </div>
+
+            <!-- 약도 이미지 또는 카카오맵 영역 -->
+            <div class="map-placeholder">
+                <!-- 실제 약도 이미지가 있다면 아래 img 태그 사용 -->
+                <img src="./images/map.jpg" alt="오시는 길 약도" onerror="this.style.display='none'; document.getElementById('mapFallback').style.display='flex';">
+                <div id="mapFallback" class="map-fallback">
+                    <p>대전 서구 대덕대로 366 (만년동 282) 2층</p>
+                    <span>아래 지도 앱 버튼을 눌러 길을 찾아보세요</span>
+                </div>
+            </div>
+
+            <!-- 내비게이션 바로가기 버튼 -->
+            <div class="navi-buttons">
+                <a href="https://map.naver.com/v5/search/대전%20서구%20대덕대로%20366" target="_blank" class="btn-navi naver">네이버 지도</a>
+                <a href="https://map.kakao.com/link/search/대전 서구 대덕대로 366" target="_blank" class="btn-navi kakao">카카오맵</a>
+            </div>
+
+            <div class="transport-info">
+                <p><strong>🅿️ 주차 안내:</strong> 건물 내 지하 주차장 및 인근 지정 주차장 이용 가능</p>
+                <p><strong>🚌 대중교통:</strong> 만년동 KBS / 둔산대공원 방면 버스 이용</p>
+            </div>
+        </section>
+
+        <!-- 5. 마음 전하실 곳 (아코디언 계좌번호) -->
+        <section class="section account-section">
+            <h2 class="section-title">마음 전하실 곳</h2>
+            <p class="section-desc">참석이 어려우신 분들을 위해 기재하였습니다.<br>너그러운 마음으로 양해 부탁드립니다.</p>
+            
+            <div class="accordion">
+                <button type="button" class="accordion-header" onclick="toggleAccordion('fatherAccount')">
+                    <span>아빠 측 계좌번호 보기</span>
+                    <span class="arrow">▼</span>
+                </button>
+                <div id="fatherAccount" class="accordion-body">
+                    <div class="account-row">
+                        <div>
+                            <p class="bank-name">OO은행 (예금주: 성선모)</p>
+                            <p class="account-num">000-0000-0000-00</p>
+                        </div>
+                        <button type="button" class="btn-copy" onclick="copyText('000-0000-0000-00')">복사</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion">
+                <button type="button" class="accordion-header" onclick="toggleAccordion('motherAccount')">
+                    <span>엄마 측 계좌번호 보기</span>
+                    <span class="arrow">▼</span>
+                </button>
+                <div id="motherAccount" class="accordion-body">
+                    <div class="account-row">
+                        <div>
+                            <p class="bank-name">OO은행 (예금주: 정한나)</p>
+                            <p class="account-num">000-0000-0000-00</p>
+                        </div>
+                        <button type="button" class="btn-copy" onclick="copyText('000-0000-0000-00')">복사</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. 푸터 & 링크 복사 -->
+        <footer class="footer">
+            <button type="button" class="btn-share" onclick="copyPageUrl()">초대장 링크 복사하기</button>
+            <p class="copyright">THANK YOU FOR CELEBRATING WITH US</p>
+        </footer>
+    </div>
+
+    <!-- 갤러리 확대 팝업 (라이트박스 모달) -->
+    <div id="lightboxModal" class="lightbox" onclick="closeLightbox(event)">
+        <button type="button" class="lightbox-close" onclick="closeLightbox(event)">✕</button>
+        <button type="button" class="lightbox-prev" onclick="changePhoto(-1, event)">‹</button>
+        <img id="lightboxImg" src="" alt="확대 사진">
+        <button type="button" class="lightbox-next" onclick="changePhoto(1, event)">›</button>
+        <div id="lightboxCounter" class="lightbox-counter">1 / 6</div>
+    </div>
+
+    <!-- 토스트 알림창 -->
+    <div id="toast" class="toast">복사되었습니다.</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
